@@ -1,0 +1,11 @@
+a. select student.name, Marks.marks from marks inner join student
+on Student.id = Marks.student_id where(subject_name = 'CS') or (subject_name = Bio);
+
+b.select Student.name,Marks.markssum(marks)from Student full join Marks on student.id = Marks.student_id
+
+c.select marks from Marks where(subject_name = 'Maths')
+
+d.select Student.name from Student full join Marks on Student.id = Marks where sum(Marks) 
+
+
+

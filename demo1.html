@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <style type='text/css'>
+    .green { background-color: green; }
+    .grey{ background-color: grey; }
+    .box { width: 1000px; height: 500px; }
+  </style>
+</head>
+<body>
+<div class="grey box" id="dataBox">
+</div>
+<div class="box" style="text-align: center;">
+  <button id="clickButton" onclick="change()">Click Me</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+function change()
+    {
+    var box = document.getElementById("dataBox");
+    box.style.backgroundColor = "green";
+    }
+</script>
+</body>
+</html>
+
